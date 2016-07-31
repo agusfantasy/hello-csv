@@ -17,8 +17,8 @@ function naive() {
 
                 let line = parsed[index];
 
-                // FIXME: Put your transformation here
-
+                line[1] =  line[0] + ' ' + line[1];
+                line.shift();
                 if (index > 0) {
                     debug(`sending data index: ${index - 1}`);
 
@@ -38,6 +38,8 @@ function naive() {
                                 if (err) {
                                     debug(err.message);
                                 }
+
+                                console.log({ lineToLog, loggingStatus, });
                             });
                         }
                     });

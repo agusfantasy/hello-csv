@@ -20,3 +20,9 @@ The backlog is as folows:
 Ah, yes, one last thing, please use http://jscs.info/ to make your code consistent.
 
 Have fun!
+
+
+### Answer about naive
+That's so naive function. 
+- callback chaining, which is not good because there are four asyncronous, the code is not readability and not clean, and can't run parallel, would be better use promise or async
+- "for", looping array data by "for" is lower then forEach, or it can be use async.forEachOf.
